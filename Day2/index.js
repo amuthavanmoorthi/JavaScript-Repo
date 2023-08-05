@@ -18,7 +18,9 @@ else if(mark>=70){
     document.write("Grade A")
 }
 
-Array
+// Array
+
+
 
 var array=[1,2,3,4,5];
 for(let a=0; a<array.length; a++){
@@ -36,3 +38,5 @@ for (let a=1; a<=5; a++){
     }
 }
     document.write("<br>")
+
+    
