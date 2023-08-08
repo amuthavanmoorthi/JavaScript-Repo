@@ -11,40 +11,39 @@
 <body>
    
 
-    <div class="container border">
+    <div class="container border text-align-center">
         <div class="d-flex justify-content-center">
             <input type="text" class="MainBox mt-3 fs-1" id="InputBox">
         </div>
         <div class="column d-flex justify-content-center p-2">
-            <input type="button" value="7" class="p-5 m-2" onclick="Input('7')">
-            <input type="button" value="8" class="p-5 m-2" onclick="Input('8')">
-            <input type="button" value="9" class="p-5 m-2" onclick="Input('9')">
-            <input type="button" value="*" class="p-5 m-2" onclick="Input('*')"><br>
+            <input type="button" value="7" class="p-4 m-2 fs-1 border border-success Cus-But" onclick="Input('7')">
+            <input type="button" value="8" class="p-4 m-2 fs-1 border border-success Cus-But" onclick="Input('8')">
+            <input type="button" value="9" class="p-4 m-2 fs-1 border border-success Cus-But" onclick="Input('9')">
+            <input type="button" value="*" class="p-4 m-2 fs-1 border border-success Cus-But" onclick="Input('*')">
         </div>
         <div class="column d-flex justify-content-center">
-            <input type="button" value="4" class="p-5 m-2" onclick="Input('4')">
-            <input type="button" value="5" class="p-5 m-2" onclick="Input('5')">
-            <input type="button" value="6" class="p-5 m-2" onclick="Input('6')">
-            <input type="button" value="-" class="p-5 m-2" onclick="Input('-')"><br>
+            <input type="button" value="4" class="p-4 m-2 fs-1 border border-success Cus-But" onclick="Input('4')">
+            <input type="button" value="5" class="p-4 m-2 fs-1 border border-success Cus-But" onclick="Input('5')">
+            <input type="button" value="6" class="p-4 m-2 fs-1 border border-success Cus-But" onclick="Input('6')">
+            <input type="button" value="-" class="p-4 m-2 fs-1 border border-success Cus-But" onclick="Input('-')">
         </div>
         <div class="column d-flex justify-content-center">
-            <input type="button" value="1" class="p-5 m-2" onclick="Input('1')">
-            <input type="button" value="2" class="p-5 m-2" onclick="Input('2')">
-            <input type="button" value="3" class="p-5 m-2" onclick="Input('3')">
-            <input type="button" value="+" class="p-5 m-2" onclick="Input('+')"><br>
+            <input type="button" value="1" class="p-4 m-2 fs-1 border border-success Cus-But" onclick="Input('1')">
+            <input type="button" value="2" class="p-4 m-2 fs-1 border border-success Cus-But" onclick="Input('2')">
+            <input type="button" value="3" class="p-4 m-2 fs-1 border border-success Cus-But" onclick="Input('3')">
+            <input type="button" value="+" class="p-4 m-2 fs-1 border border-success Cus-But" onclick="Input('+')">
         </div>
         <div class="column d-flex justify-content-center">
-            <input type="button" value="/" class="p-5 m-2" onclick="Input('/')">
-            <input type="button" value="0" class="p-5 m-2" onclick="Input('0')">
-            <input type="button" value="C" class="p-5 m-2" onclick="Clear()">
-            <input type="button" value="=" class="p-5 m-2" onclick="Equal()">
+            <input type="button" value="/" class="p-4 m-2 fs-1 border border-success Cus-But" onclick="Input('/')">
+            <input type="button" value="0" class="p-4 m-2 fs-1 border border-success Cus-But" onclick="Input('0')">
+            <input type="button" value="C" class="p-4 m-2 fs-1 border border-success Cus-But" onclick="Clear()">
+            <input type="button" value="=" class="p-4 m-2 fs-1 border border-success Cus-But" onclick="Equal()">
     </div>
 
     <script>
 
         function Input(value){
             var ResultBox = document.getElementById("InputBox").value += value;
-
         }
         function Clear(){
             var ClearBox = document.getElementById("InputBox").value ="";
@@ -52,8 +51,7 @@
         function Equal(){
             var EqualBox = eval(document.getElementById("InputBox").value);
             document.getElementById("InputBox").value=EqualBox;
-        
         }
     </script>       
 </body>
-</html>
+</html> 

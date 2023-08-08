@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input type="button" value="1" onclick="Text('1')">
+    <input type="button" value="2" onclick="Text('2')">
+    <input type="button" value="3" onclick="Text('3')">
+    <input type="button" value="+" onclick="Text('+')">
+    <input type="button" value="=" onclick="Equal()">
+    <input type="text" id="Input">
+
+    <script>
+        function Text(value){
+            document.getElementById("Input").value += value;
+        }
+        function Equal(){
+           let result = eval (document.getElementById("Input").value)
+            document.getElementById("Input").value=result;
+        }
+    </script>
+</body>
+</html>
