@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            background-color: cadetblue;
+        }
+        .Main_Div{
+           justify-content: center;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="Main_Div">
+    <h1>TO DO LIST</h1>
+    <p>Add Your Doing Things Today!</p>
+    <div class="Main_Div">
+        <input type="text" id="cart" placeholder="Enter what you gonna do">
+        <button id="addBtn" onclick="add()">ADD</button>
+    </div>
+    <ol type="I" id="cardList"></ol>
+    </div>
+
+    <script>
+        function add(){
+            const item = document.getElementById('cart');
+            const cartList = document.getElementById('cardList');
+
+            var cartItemValue = item.value;
+            const li = document.createElement('li');
+            li.textContent = cartItemValue;
+            cartList.appendChild(li);
+            item.value = '';
+        }
+    </script>
+</body>
+</html>
