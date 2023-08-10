@@ -6,6 +6,16 @@
     <title>Document</title>
 </head>
 <body>
-    
+    <button onclick="console.log(`card Quantity:${a};`)">Show Quantity</button>
+    <button onclick="console.log(`card Quantity:${a += 1};`)">Add to cart</button>
+    <button onclick="console.log(`card Quantity:${a += 2};`)">+2</button>
+    <button onclick="console.log(`card Quantity: ${a +=3};`)">+3</button>
+
+
+    <button onclick="cart=0; console.log(`cart was reset:`,cart);">Reset Card</button>
+
+    <script>
+        let a = 0;
+    </script>
 </body>
 </html>
