@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+
+</head>
+<body>
+
+<!-- Switch Off images  -->
+
+<div>
+    <div class="d-flex justify-content-center">
+        <img src="https://d1tgh8fmlzexmh.cloudfront.net/ccbp-dynamic-webapps/bulb-go-off-img.png" alt="No bulb image" id="On-Bulb">
+    </div>
+    <div class="d-flex justify-content-center">
+        <img src="https://d1tgh8fmlzexmh.cloudfront.net/ccbp-dynamic-webapps/cat-eyes-img.png" alt="NO cat eye image" id="On-Cat">
+    </div>
+</div>
+
+<!-- Switch Box  -->
+
+<div class="d-flex justify-content-center">  
+      <div class="bg-dark w-25 pb-4">
+        <div class="d-flex justify-content-center">
+            <p class="text-white fs-3">Swithed Off</p>   
+        </div> 
+    <div class="d-flex justify-content-center gap-5"> 
+        <input type="button" value="OFF" onclick="OFF()" class="ps-5 pe-5 border-dark" id="OFF_Button">
+        <input type="button" value="ON" onclick="ON()" class="ps-5 pe-5 border-dark" id="On_Button">
+    </div>
+    </div>
+</div>
+
+<!-- JavaScript  -->
+
+<script>
+
+let ON = () =>{
+    document.getElementById("On-Bulb").src=("https://d1tgh8fmlzexmh.cloudfront.net/ccbp-dynamic-webapps/bulb-go-on-img.png");
+    document.getElementById("On-Cat").src=("https://d1tgh8fmlzexmh.cloudfront.net/ccbp-dynamic-webapps/cat-img.png");
+    document.getElementById("On_Button").style.backgroundColor="Green";
+}
+let OFF = () =>{
+    document.getElementById("On-Bulb").src=("https://d1tgh8fmlzexmh.cloudfront.net/ccbp-dynamic-webapps/bulb-go-off-img.png");
+    document.getElementById("On-Cat").src=("https://d1tgh8fmlzexmh.cloudfront.net/ccbp-dynamic-webapps/cat-eyes-img.png");
+    document.getElementById("OFF_Button").style.backgroundColor="Red";
+}
+
+</script>
+
+
+
+
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
+</body>
+</html>

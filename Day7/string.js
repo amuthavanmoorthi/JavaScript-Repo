@@ -1,5 +1,5 @@
 let st = () => {
     let a = "amudhavan";
-    a.length;
+    return parseInt(a.length);
 }
 document.write(st());

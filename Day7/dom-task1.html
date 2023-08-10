@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+ <html>
+    <head>
+<meta charset=utf-8 />
+<title>JS DOM paragraph style</title>
+ </head>
+ <body>
+ <p id ='text'>JavaScript Exercises - KGMicrocollege</p>
+ <div>
+<button id="jsstyle" onclick="js_style()">Style</button>
+ </div>
+
+ <script>
+     document.getElementById("jsstyle").style.backgroundColor="Green";
+
+    let js_style = () => {
+        let adding = document.getElementById("text").style.fontSize="20px";
+        adding.style.backgroundColor="Green";
+    }
+    // js_style();
+ </script>
+</body>
+ </html>
