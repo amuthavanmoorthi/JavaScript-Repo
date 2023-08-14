@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <div id="div"></div>
+    <button id="btn"></button>
+    <button id="mybtn"></button>
+    <input id="in">
+
+    <script>
+
+// 1. create an new div with createElement
+var newDiv = document.createElement("div");
+
+
+// 2. create an text (Login Page) with createTextNode
+var newContent = document.createTextNode("Hi, How are you doing?");
+
+// 3. create an input box with createElement
+var a = document.createElement("input");
+a.setAttribute("type","text");
+a.setAttribute("value","Hello world!");
+document.body.appendChild(a); 
+
+// 4. create an button with createElement
+var button = document.createElement("mybtn");
+var button1 = document.createElement("button");
+button.appendChild(button1);
+document.body.appendChild(button);
+
+    //button.disabled=true;
+
+// 5. create an button text (Click) with createTextNode
+var btn = document.createElement("btn");
+var btnText = document.createTextNode("Click");
+btn.appendChild(btnText);
+
+// 6. append the button text with button element.
+var btnText = document.createTextNode("Click");
+btn.appendChild(btnText);
+
+// 7. append the text with div element
+var c = document.createElement("div");
+var b = document.createTextNode("Hello Div");
+c.appendChild(b);
+
+// 8. append the input with div element
+var input = document.createElement("in");
+var div = document.createTextNode("div");
+input.appendChild(div);
+
+// 9. append the button with div element
+var butt = document.createElement("btn");
+var div1 = document.createTextNode("div");
+butt.appendChild(div1);
+
+// 10. append the div with the document body
+let ten = document.createElement("body");
+let divs = document.createElement("div");
+ten.appendChild(divs);
+
+    </script>
+</body>
+</html>

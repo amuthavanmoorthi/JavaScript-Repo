@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+<div>
+    <h1>Add To Cart</h1>
+
+    <input value="" type="text" onkeydown="Things()" id="Adding" placeholder="Enter what you have to add your cart!">
+
+    <input type="button" value="Add" onclick="Add()" id="addBtn">
+
+    <ol id="CartList"></ol>
+</div>
+   
+
+    <script>
+        function Add()
+        {
+            const item = document.getElementById("Adding");
+            const cartList = document.getElementById("CartList");
+
+            const storingThethings = item.value;
+
+            const Lilist = document.createElement('li');
+            Lilist.textContent =  storingThethings;
+
+            cartList.appendChild(Lilist);
+            item.value = '';
+
+        }
+    </script>
+</body>
+</html>
