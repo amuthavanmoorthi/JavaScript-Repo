@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Input and Alert Example</title>
+</head>
+<body>
+
+<button onclick="showPrompt()">Click me to input</button>
+
+<script>
+function showPrompt() {
+    // Prompt the user to enter some text
+    var userInput = prompt("Please enter some text:");
+
+    // Check if the user clicked 'Cancel' or entered an empty string
+    if (userInput === null || userInput === "") {
+        alert("No input provided.");
+    } else {
+        // Display the input in an alert box
+        alert("You entered: " + userInput);
+    }
+}
+</script>
+
+</body>
+</html>
