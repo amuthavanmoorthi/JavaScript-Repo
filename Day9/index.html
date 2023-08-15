@@ -6,14 +6,33 @@
     <title>Document</title>
 </head>
 <body>
-    <script>
+    <form>
+        <label>
+            Enter your score:
+        </label>
+        <input type="number" id="FirstInput" placeholder="Enter your first score"><br>
+        <label>
+            Enter your score:
+        </label>
+        <input type="number" id="SecondInput" placeholder="Enter your second score"><br>
 
-        alert("Hello world!")
+        <input type="button" value="Compare" id="Cop">
+    </form>
+<script>
 
-        let UserInput = prompt("Enter the promt value");
-        alert(UserInput);
+document.getElementById("Cop").onclick = function()
+{
+    let one = document.getElementById("FirstInput").value;
+    let two = document.getElementById("SecondInput").value;
 
+    if (one === two){
+        alert("Values are equals");
+    }
+    else{
+        alert("Values are not equals");
+    }
+}
+</script>
 
-    </script>
 </body>
 </html>
