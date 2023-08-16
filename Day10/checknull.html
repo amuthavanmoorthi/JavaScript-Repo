@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let a = document.createElement("input");
+        a.setAttribute("type","text");
+        document.body.appendChild(a);
+        // document.createElement("br");
+        
+
+        let b = document.createElement("input");
+        b.setAttribute("type","text");
+        document.body.appendChild(b);
+
+        let button = document.createElement("button");
+        button.innerHTML="check";
+        document.body.appendChild(button);
+
+        // functions 
+
+        
+        button.addEventListener("click",()=>{
+          
+            if(a.value==='' || b.value===''){
+            alert("One of your data is empty, kindly fill it and try againsmile");
+        }
+
+        })
+
+       
+    </script>
+</body>
+</html>
