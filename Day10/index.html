@@ -7,16 +7,29 @@
 </head>
 <body>
     <script>
-            let a = window.prompt();
-            let b = window.prompt();
+            let a = parseInt( prompt());
+            let b = parseInt ( prompt());
 
-            add.innerHTML = a+b;
-            let Sub = a-b;
-            let mul = a*b;
-            let div = a/b;
-            let mod = a%b;
+           let paras = document.createElement("p");
+           paras.innerHTML =parseInt(a+b);
 
-            document.write(add);
+           let subs = document.createElement("p");
+           subs.innerHTML = parseInt(a-b);
+
+           let ints = document.createElement("p");
+           ints.innerHTML = parseInt(a*b);
+
+           let divs = document.createElement("p");
+           divs.innerHTML = parseInt(a/b);
+
+           let mods = document.createElement("p");
+           mods.innerHTML = parseInt(a%b);
+
+           document.body.appendChild(paras);
+           document.body.appendChild(subs);
+           document.body.appendChild(ints);
+           document.body.appendChild(divs);
+           document.body.appendChild(mods);
     </script>
 </body>
 </html>
