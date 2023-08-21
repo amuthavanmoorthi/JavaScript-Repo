@@ -1,0 +1,40 @@
+.body_color{
+    background: linear-gradient(90deg, rgba(131,58,180,1) 0%, rgba(253,29,29,1) 50%, rgba(252,176,69,1) 100%);
+    width: 100%;
+    height:89vh;
+    justify-content: center;
+    padding-top: 70px;
+}
+.border_size{
+    border: 1px solid black;
+    width: 30%;
+    height: 500px;
+    margin-left: 500px;
+    /* margin-top: 70px; */
+    background-color: white;
+
+}
+.heading{
+    text-align: center;
+    font-family:cursive;
+}
+.around{
+    padding: 10px;
+    border-radius: 10px;
+}
+.space{
+    margin: 60px;
+}
+.car{
+    font-family:cursive;
+    /* letter-spacing: 1px; */
+}
+.bus{
+    margin: 80px;
+    padding:10px 40px;
+    border-radius: 10px;
+}
+:hover.bus{
+    background-color: rgb(103, 94, 233);
+    padding: 13px 45px;
+}
