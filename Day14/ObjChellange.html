@@ -7,6 +7,9 @@
 </head>
 <body>
     <script>
+
+// First Challenge 
+
         const jonas = {
             name : 'Jonas',
             age : '46',
@@ -15,6 +18,39 @@
         };
 
         console.log(`${jonas.name} is a ${jonas.age}-years old ${jonas.job}, and he has ${jonas.driverLicense ? 'a':'No'} driverLicense.`)
+
+
+// Second Chellange 
+
+        const mark={
+            full_name : "Mark miller",
+            mass : 78,
+            height : 1.69,
+            calcBMI: function (){
+                this.BMI = this.mass/this.height**2;
+                return this.BMI;
+            }
+        }
+
+        const john={
+            full_name : "John Smith",
+            mass : 92,
+            height : 1.95,
+            calcBMI: function (){
+                this.BMI = this.mass/this.height**2;
+                return this.BMI;
+            }
+        }
+        mark.calcBMI();
+        john.calcBMI();
+
+            if(mark.calcBMI >= john.calcBMI){
+                console.log(`${mark.full_name}'s BMI ${mark.BMI} is higher than ${john.full_name}'s ${john.BMI}!`);
+            }
+            else{
+                console.log(`${john.full_name}'s BMI ${john.BMI} is higher than ${mark.full_name}'s ${mark.BMI}!`);
+            }
+
     </script>
 </body>
 </html>
