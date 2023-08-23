@@ -16,18 +16,22 @@ const me=[
      100
 ]
 
-console.log("---ONLY STRING---");
+// console.log("---ONLY STRING---");
 
-for (let i = 0; i<me.length; i++){
-    if(typeof me[i] !== 'string') continue; //it will print only a string value.
+// for (let i = 0; i<me.length; i++){
+//     if(typeof me[i] !== 'string') continue; //it will print only a string value.
 
-    console.log(me[i], typeof me[i]);
-}
+//     console.log(me[i], typeof me[i]);
+// }
 
-console.log("---ONLY NUMBER---");
+// console.log("---ONLY NUMBER---");
 
-for (let i = 0; i<me.length; i++){
-    if(typeof me[i] === 'number') break; //It will break the loop when the number will come.
+// for (let i = 0; i<me.length; i++){
+//     if(typeof me[i] === 'number') break; //It will break the loop when the number will come.
 
-    console.log(me[i], typeof me[i]);
+//     console.log(me[i], typeof me[i]);
+// }
+
+for (let i=me.length-1; i<=0; i--){
+    console.log(i,me[i]);
 }
