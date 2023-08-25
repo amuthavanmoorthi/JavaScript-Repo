@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="task.css">
+</head>
+<body>
+    <div>
+        <img src="https://d1tgh8fmlzexmh.cloudfront.net/ccbp-dynamic-webapps/seasons-switcher-four-seasons-md-img.png" class="Big" id="FullImage"/>
+    </div>
+    <div>
+        <button onclick="Spring()">Spring</button>
+        <button onclick="Summer()">Summer</button>
+        <button onclick="Automn()">Automn</button>
+        <button onclick="Winter()">Winter</button>
+
+    </div>
+
+    <script>
+        function Spring(){
+            document.getElementById("FullImage").src="https://d1tgh8fmlzexmh.cloudfront.net/ccbp-dynamic-webapps/seasons-switcher-spring-md-img.png";
+        }
+        function Summer(){
+            document.getElementById("FullImage").src="https://d1tgh8fmlzexmh.cloudfront.net/ccbp-dynamic-webapps/seasons-switcher-summer-md-img.png";
+        }
+        function Automn(){
+            document.getElementById("FullImage").src="https://d1tgh8fmlzexmh.cloudfront.net/ccbp-dynamic-webapps/seasons-switcher-autumn-md-img.png";
+        }
+        function Winter(){
+            document.getElementById("FullImage").src="https://d1tgh8fmlzexmh.cloudfront.net/ccbp-dynamic-webapps/seasons-switcher-winter-md-img.png";
+        }
+    </script>
+</body>
+</html>
