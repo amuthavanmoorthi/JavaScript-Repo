@@ -1,0 +1,46 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap demo</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+  </head>
+  <body class="container mt-5">
+
+<div class="d-flex justify-content-center">
+    <div>
+        <h1>To Do List</h1>
+        <button onclick="Sun()" class="bg-white border-0"><pre>Sun 
+1</pre></button>
+        <button onclick="Mon()" class="bg-white border-0"><pre>Mon 
+2</pre></button>
+        <button onclick="Tue()" class="bg-white border-0"><pre>Tue 
+3</pre></button>
+        <button onclick="Wed()" class="bg-white border-0"><pre>Wed 
+4</pre></button>
+        <button onclick="Thu()" class="bg-white border-0"><pre>Thu 
+5</pre></button>
+        <button onclick="Fri()" class="bg-white border-0"><pre>Fri 
+6</pre></button>
+        <button onclick="Sat()" class="bg-white border-0"><pre>Sat 
+7</pre></button>    
+    </div>
+</div>
+    <div>
+        <table id="Sun" class="d-flex justify-content-center">
+        </table>
+    </div>
+
+    <script>
+        function Sun(){
+           document.getElementById("Sun").innerHTML=`<style>.input{padding:10px 150px 10px} </style><button class="input"><input type="checkbox"/> Do it now</button>`;
+           document.getElementById("Sun").innerHTML=`<style>.input{padding:10px 150px 10px} </style><button class="input"><input type="checkbox"/> There is no tomorrow</button>`;
+           document.getElementById("Sun").innerHTML=`<style>.input{padding:10px 150px 10px} </style><button class="input"><input type="checkbox"/>Sunday have some fun!</button>`;
+           document.getElementById("Sun").innerHTML=`<style>.input{padding:10px 150px 10px} </style><button class="input"><input type="checkbox"/>Be relax!</button>`;
+           document.getElementById("Sun").innerHTML=`<style>.input{padding:10px 150px 10px} </style><button class="input"><input type="checkbox"/>See you in monday</button>`;
+        }
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
+  </body>
+</html>
