@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <div>
+        <label>UserName :</label>
+        <input type="text" id="ins" onkeyup="hello()"><span id="star">***</span><br>
+
+        <label>Password :</label>
+        <input type="password" id="ins1" onkeyup="hello()"><span id="star1">***</span><br>
+
+        <input type="button" value="LOGIN" onclick="check()">
+    </div>
+
+    <script>
+        function hello(valid,strong){
+            let a = document.getElementById("ins").value;
+            let b = document.getElementById("star");
+
+            let c = document.getElementById("ins1").value;
+            let d = document.getElementById("star1");
+            
+            console.log(c);
+
+            if(a.length>5){
+              let valid =  b.innerHTML="Valid UserName"
+                b.style.color="Green"
+            }
+            else{
+                b.innerHTML="Must have an 6 character"
+                b.style.color="Red"
+            }
+
+            if(c.length>5){
+             let strong =   d.innerHTML="Strong"
+                d.style.color="Green"
+            }
+            else{
+                d.innerHTML="Must have an 6 character"
+                d.style.color="Red"
+            }
+        }
+        function check(){
+            let a = document.getElementById("ins").value;
+            let c = document.getElementById("ins1").value;
+            if(a==c){
+                window.alert(`Welcome ${a}`)
+            }
+        }
+
+    </script>
+</body>
+</html>
