@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div>
+        <!-- <a target="_blank" href="https://www.simplilearn.com/image-processing-article"><img src="https://www.simplilearn.com/ice9/free_resources_article_thumb/what_is_image_Processing.jpg" id="image"/></a> -->
+
+        <img src="https://www.simplilearn.com/ice9/free_resources_article_thumb/what_is_image_Processing.jpg" id="image"/>
+    </div>
+
+    <script>
+        let a = document.getElementById('image');
+
+        a.addEventListener('click',clickFunction);
+        a.addEventListener('mouseout',outFunction);
+        a.addEventListener('mouseover',overkFunction);
+        
+        zoomImage.addEventListener('click', () => {
+  window.open(zoomImage.src, '_blank');
+});
+
+        function clickFunction(){
+            let b = document.getElementById('image');
+            window.open()
+        }
+
+        function outFunction(){
+            document.getElementById('image').style.height="100px";
+        }
+
+        function overkFunction(){
+            document.getElementById('image').style.height="900px"; 
+        }
+    </script>
+</body>
+</html>

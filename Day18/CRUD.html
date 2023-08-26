@@ -10,8 +10,8 @@
 
     <div class="mb-5">
         <label><b>Full Name :</b></label>
-        <input type="text" placeholder="Enter the name" onclick="texts()" id="inputId" />
-        <button class="bg-primary text-white rounded tw-b"> + Create</button>
+        <input type="text" placeholder="Enter the name"  id="inputId" />
+        <button class="bg-primary text-white rounded tw-b" onclick="texts()"> + Create</button>
     </div>
 
     <div>
@@ -22,8 +22,8 @@
                         <th scope="col">NAME</th>
                         <th scope="col">ACTION</th>
                     </tr>
-                </thead id="addingValue">
-                <tbody>
+                </thead>
+                <tbody id="addingValue">
                 </tbody>
             </table>
         </div>
@@ -35,9 +35,13 @@
 
         function texts(){
             let a = document.getElementById("inputId").value;
-            console.log(`hi`)
-            let b=document.getElementById('addingValue')
-            b.innerHTML=`<tr><td>${a}</td><td><button>Edit</button><button>Remove</button></tr>`;
+            // console.log(`hi`)
+            let valuess = document.getElementById('addingValue').innerHTML+=`<tr><td>${a}</td><td><button>Edit</button><a onClick ='remove()'><button>Remove</button></a></td></tr>`;
+            document.getElementById('inputId').value=" ";
+        }
+
+        function remove(id){
+            
         }
     </script>
 

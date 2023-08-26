@@ -33,12 +33,18 @@
     </div>
 
     <script>
+        
         function Sun(){
-           document.getElementById("Sun").innerHTML=`<style>.input{padding:10px 150px 10px} </style><button class="input"><input type="checkbox"/> Do it now</button>`;
-           document.getElementById("Sun").innerHTML=`<style>.input{padding:10px 150px 10px} </style><button class="input"><input type="checkbox"/> There is no tomorrow</button>`;
-           document.getElementById("Sun").innerHTML=`<style>.input{padding:10px 150px 10px} </style><button class="input"><input type="checkbox"/>Sunday have some fun!</button>`;
-           document.getElementById("Sun").innerHTML=`<style>.input{padding:10px 150px 10px} </style><button class="input"><input type="checkbox"/>Be relax!</button>`;
-           document.getElementById("Sun").innerHTML=`<style>.input{padding:10px 150px 10px} </style><button class="input"><input type="checkbox"/>See you in monday</button>`;
+                let a =['Do it now', 'see you there', 'hello'];
+                for (let i=0; i<=5; i++){
+                        console.log(a[i]);
+           document.getElementById("Sun").innerHTML='<style>.input{padding:10px 150px 10px} </style><button class="input"><input type="checkbox"/>' + a[i] + '</button>';
+           
+        //    document.getElementById("Sun").innerHTML=`<style>.input{padding:10px 150px 10px} </style><button class="input"><input type="checkbox"/> There is no tomorrow</button>`;
+        //    document.getElementById("Sun").innerHTML=`<style>.input{padding:10px 150px 10px} </style><button class="input"><input type="checkbox"/>Sunday have some fun!</button>`;
+        //    document.getElementById("Sun").innerHTML=`<style>.input{padding:10px 150px 10px} </style><button class="input"><input type="checkbox"/>Be relax!</button>`;
+        //    document.getElementById("Sun").innerHTML=`<style>.input{padding:10px 150px 10px} </style><button class="input"><input type="checkbox"/>See you in monday</button>`;
+}
         }
     </script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
