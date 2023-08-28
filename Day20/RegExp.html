@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input type="text" id="input" onkeydown="check()"> <span id="span"></span>
+    <script>
+
+        function check(){
+           let b = document.getElementById('input').value;
+            let a = new RegExp(/^[a-zA-Z0-9]{1,}[a-z]{3,}\@[a-z]{4,}\.[a-z]{2,}$/) 
+            
+            if ( b.match(a)){
+                document.getElementById('span').innerHTML='Good mail'
+            }
+            else{
+                document.getElementById('span').innerHTML='bad mail'
+            }
+
+        // let b = document.getElementById('input').value;
+        //     let a = new RegExp(/^[a-z]{1,50} \@[gmail] \. [com]$/) 
+            
+        //     if ( b.match(a)){
+        //         document.getElementById('span').innerHTML='Good mail'
+        //     }
+        //     else{
+        //         document.getElementById('span').innerHTML='Bad mail'
+        //     }
+
+        }
+    </script>
+</body>
+</html>

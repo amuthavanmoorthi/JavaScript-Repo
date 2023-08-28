@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <input type="text" id="input">
+    <button onclick="add()">ADD</button>
+    <ul id="list"></ul>
+    <script>
+        // let subject = 'amudhavan';
+
+    //    let subject = window.prompt();
+
+function add(){
+let subject = document.getElementById('input').value;
+
+        for (let a in subject){
+            // console.log(subject[a]);
+            document.getElementById('list').innerHTML +=`<li>${subject[a]}</li>`;
+        }
+    }
+
+    </script>
+</body>
+</html>
