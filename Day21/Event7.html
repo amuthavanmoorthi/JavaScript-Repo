@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <button onclick="Submit()">SUBMIT</button>
+    <select id="sel"></select>
+    <input type="text" id="input" >
+    <script>
+        function Submit(){
+            const a = parseInt(document.getElementById('input').value);
+            for(let i=1; i<=a; i++){
+                document.getElementById('sel').innerHTML +=`<option> ${i} </option>`;
+            }
+        }
+    </script>
+</body>
+</html>
