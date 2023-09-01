@@ -71,11 +71,11 @@ document.getElementById('printBtn').addEventListener('click', function(){
     const print = window.open(" ",'_blank');
     print.document.write(`Name : ${payData.name}`);
     print.document.write(`ID : ${payData.eid}`);
-    print.document.write(`Designation : ${payData.designation}`);
+    print.document.write(`Designation : ${payData.designations}`);
     print.document.write(`Basic Pay : ${payData.basic}`);
-    print.document.write(`House Rent Allowence : ${payData.houserara}`);
-    print.document.write(`Daily Allowence : ${payData.dailyaa}`);
-    print.document.write(`Provident Fund : ${payData.providentff}`);
+    print.document.write(`House Rent Allowence : ${payData.housera}`);
+    print.document.write(`Daily Allowence : ${payData.dailya}`);
+    print.document.write(`Provident Fund : ${payData.providentf}`);
     print.document.write(`Net Salary : ${payData.netSalary}`);
     print.document.write(`Gross Salary : ${payData.grossSalary}`);
   }
