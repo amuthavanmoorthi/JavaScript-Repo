@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <span id="first"></span>+<span id="second">Second</span> = 
+    <input type="text" id="input">
+    <button onclick="check()">Check</button>
+    <button>Restart</button>
+
+    <p id="message"></p>
+
+    <script>
+        
+     let firstValue =  document.getElementById('first').innerHTML=Math.round(Math.random()*10);
+      let secondValue = document.getElementById('second').innerHTML=Math.round(Math.random()*10);
+
+      let sum = parseInt( firstValue+secondValue);
+        console.log(sum);
+
+       function check(){
+        let a = document.getElementById('input').value;
+        if(sum == a){
+            document.getElementById('message').textContent="Congratulations!";
+        }
+        else{
+            document.getElementById('message').textContent="Try again!";
+        }
+       }
+    </script>
+</body>
+</html>

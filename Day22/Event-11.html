@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input type="date" name="" id="dateId">
+    <button onclick="clickFunction()">Click</button>
+
+    <script>
+        function clickFunction(){
+            let a =document.getElementById('dateId').value;
+            let b = new Date(a);
+            let c = new Date(a);
+            b.setDate(b.getDate()+5);
+            c.setDate(c.getDate()-5);
+            document.write("+5 Days is :",b,"-5 Days is :",c);
+        }
+    </script>
+</body>
+</html>

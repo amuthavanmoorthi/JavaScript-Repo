@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <label>Select Date :</label>
+    <input type="date" id="date">
+    <button onclick="check()">CHECK</button>
+
+    <script>
+        function check(){
+        // let a = new Date();
+        //   let a =  document.getElementById('date').value;
+        //   let b =  a.setDate(a.getDate()+120)
+        //   document.write(b);
+
+        //   var date = document.getElementById('date').value;
+        //   var d = new Date(date);
+        //   d.setDate(d.getDate(date)+120);
+        //   var result = d.getDate()+"/"+(d.getMonth()+1)+"/"+d.getFullYear();
+        //   console.log(result);
+
+        let a = document.getElementById('date').value;
+        let b = new Date(a);
+        b.setDate(b.getDate()+120);
+        document.write(b);
+        }
+    </script>
+</body>
+</html>

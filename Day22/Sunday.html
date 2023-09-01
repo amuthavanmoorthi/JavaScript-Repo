@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input type="date" id="dateId">
+    <button onclick="clickFunction()">CLICK</button>
+
+    <script>
+        function clickFunction(){
+            for (let i=0; i<=30; i++){
+            let a = document.getElementById('dateId').value;
+            let b = new Date(a);
+            b.setDate(b.getDate(b)+30);
+            document.write(b);
+            }
+        }
+    </script>
+
+    
+</body>
+</html>
