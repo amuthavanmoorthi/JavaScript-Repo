@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form>
+        <h1>Sign Up</h1>
+        First Name : <input type="text" id="nameId"><br>
+        Last Name : <input type="text" id="lastId"><br>
+        Email : <input type="text" id="emailId"><br>
+        Phone No : <input type="tel" id="phoneId"><br>
+        Password : <input type="password" id="passwordId"><br>
+        <button onclick="sign()">SIGN UP</button><br>
+    </form><br>
+    <table border="1">
+        <thead>
+            <tr>
+                <td>S.NO</td>
+                <td>First Name</td>
+                <td>Last Name</td>
+                <td>Email</td>
+                <td>phone No</td>
+                <td>Password</td>
+                <td>Action</td>
+            </tr>
+        </thead>
+        <tbody id="tbodyId">
+
+        </tbody>
+    </table><br>
+
+<form>
+    <h1>LOGIN</h1>
+    User Name : <input type="text" id="linput"><br>
+    Password : <input type="password" id="lpassword"><br>
+    <button onclick="login()">LOGIN</button><br>
+</form>
+<script>
+    function sign(){
+ let obj = { a :  document.getElementById('nameId').value ,
+            b :document.getElementById('lastId').value,
+c : document.getElementById('emailId').value,
+ d : document.getElementById('phoneId').value,
+e : document.getElementById('passwordId').value
+ }
+ localStorage.setItem('StoredData',JSON.stringify(obj));
+ alert('Stored in JSON');
+ document.getElementById('tbodyId').innerHTML=`<tr><td>${obj.a}</td><td>${obj.b}</td><td>${obj.c}</td><td>${obj.d}</td><td>${obj.e}</td><td> Yes </td> </tr>`;
+}
+
+function login(){
+   let StoredData = JSON.parse(localStorage.getItem('StoredData'))
+   let ins =  document.getElementById('linput').value;
+   let ins2 =  document.getElementById('lpassword').value;
+//    let a =  document.getElementById('nameId').value;
+//    let e = document.getElementById('passwordId').value;
+   if(StoredData){
+    if(ins === StoredData.a && ins2 === StoredData.e){
+        alert('Login success!')
+    }
+    else{
+        alert(
+            "Invalid!"
+        )
+    }
+
+   }
+}
+
+
+</script>
+</body>
+</html>
