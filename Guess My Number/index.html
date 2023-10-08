@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Guess My Number</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+      crossorigin="anonymous"/>
+  </head>
+  <body>
+    <div>
+    <div style="background-color: black;" class="mainBg min-vh-100 text-white">
+    <header>
+      <section>
+        <div class="d-flex justify-content-around">
+          <button class="rounded border-0 text-white px-3 py-2 fw-bold mt-5 restart" style="background-color: green;">Play Again!</button>
+          <p class="mt-5">(Between 1 and 20)</p>
+        </div>
+      </section>
+      <section class="d-flex justify-content-center mt-5">
+        <h1 class="mt-4"><b>Guess My Number</b></h1>
+      </section>
+      <div class="number text-center text-dark bg-white mt-5 p-3"><h1>?</h1></div>
+    </header>
+    <main class="mt-5">
+      <div class="row gx-0">
+        <div class="col-6 d-flex justify-content-center mt-3">
+          <section class="ms-2">
+            <input type="number" placeholder="Your Number" class="userNumber text-center rounded px-0" /><br />
+            <button class="bg-success rounded border-0 text-white mt-5 px-5 py-2 fw-bold check">Check!</button>
+          </section>
+        </div>
+        <div class="col-6 d-flex justify-content-center mt-3">
+          <section>
+            <p class="messageUser fs-5 fw-bold">Start Guessing...</p>
+            <p class="fs-5 mt-5 fw-bold">💯 Score: <span class="score">20</span></p>
+            <p class="fs-5 mt-5 fw-bold">🎖️ HighScore : <span class="highScore">0</span></p>
+          </section>
+        </div>
+      </div>
+    </main><br><br><br><br><br><br>
+    <footer class="mt-5">
+        <div>
+            <hr>
+            <div class="d-flex justify-content-between">
+                <p>@copywrite 2023</p>
+                <p>Created by Amudhavan</p>
+            </div>
+        </div>
+    </footer>
+</div>
+</div>
+    <script type="text/javascript" src="./app.js"></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
