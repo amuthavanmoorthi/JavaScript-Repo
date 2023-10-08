@@ -1,0 +1,4 @@
+Sync = it will run asap
+async = it will run and give the output to the next input. like line by line. we should give await.
+
+
