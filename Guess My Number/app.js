@@ -51,5 +51,5 @@ document.querySelector('.restart').addEventListener('click', function(){
     document.querySelector('.score').textContent = score;
     number = Math.trunc(Math.random()*20)+1
     console.log(number);
-    document.querySelector('.number').textContent = '?';
+    document.querySelector('.number').innerHTML = '<h1>?</h1>';
 })

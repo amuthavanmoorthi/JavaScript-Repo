@@ -1,0 +1,293 @@
+<script>
+'use strict';
+// // 1. Create an Array object - (In Atleast 3 methods)
+
+// //Method 1
+// let arr = [1,2,3]
+// console.log(arr);
+
+// //Method 2
+// let arr2 = []
+// arr2[0] = "amudhavan";
+// console.log(arr2);
+
+// //Method 3
+// let Array3 = new Array(12,3,3);
+// console.log(Array3);
+
+// //Method 4
+// let Array4 = Array.of(1,23,4)
+// console.log(Array4);
+
+
+// // 2. Take the below array and copy it using the slice method and the for loop method. 
+
+// var array = [1, 2, 3, 4, 5];
+// let a = array.slice();
+// console.log(a);
+
+// let b = [];
+// for (let i=0; i<a.length; ++i){
+//     b[i]=a[i]
+// }
+// console.log(b);
+
+
+// // 3. Empty this array:
+// var array = [1, 2, 3, 4, 5];
+// array = [];
+// array.length = 0;
+// while(array.length){
+//     array.pop
+// }
+// array.splice(0, array.length)
+
+
+// // 4. What type is an Array set to?
+// let arr = [12,32]
+// console.log(arr);
+
+
+// // 5. How can you check if something is an Array?
+
+// let arr = [1,2,3]
+// //Method 1
+// let b = Array.isArray(arr)
+// console.log(b);
+
+// //Method 2
+// function check(ja){
+//     if(ja == "object"){
+//         console.log("object");
+//     }
+//     else if(ja == "String"){
+//         console.log("String");
+//     }
+//     else{
+//         console.log("Is Array");
+//     }
+// }
+// console.log(check(arr));
+
+// //6. Add an item to the end of an array.
+
+// //Method 1
+// let a = [1,2,3]
+// let b = a.push("four")
+// console.log(b);
+
+// //Method 2
+// Array[a.length] = 5;
+
+// // 7. Find the index position of d in this array
+
+// var arr = ["a", "b", "c", "d"];
+// let a = arr.indexOf("d");
+// console.log(a);
+
+// // 8. What will be returned if you look for the index of something that does not exist?
+// let arr = [1,2,3]
+// console.log(arr.includes(1));
+
+// // 9. Write a function to check if milk exists in your array
+// var items = ["milk", "bread", "sugar"];
+
+// function check (item){
+//     if (items.indexOf(item) == -1){
+//         console.log("doesn't there");
+//     }
+//     else{
+//        console.log("Yes there");
+//     }
+// }
+// check("milk")
+
+
+// // 10. Now you've found milk exists add some code to find the index of milk and remove that item.
+
+// var items = ["milk", "bread", "sugar"];
+
+// //find index of item if it exists
+// var a = items.indexOf("milk");
+// console.log(a); // 0
+
+// //remove that index from array
+// items.splice(0, 1);
+// console.log(items); // [ 'bread', 'sugar']
+
+
+// // 11. List the ways to loop over an array.
+//  * For loop
+//  * For in
+//  * For Each 
+//  * For of
+
+// // 12. Write some code to put these numbers in order (Ascending & Descending)
+// var numbers = [1, 12, 2, 23, 77, 7, 33, 5, 99, 234];
+
+// // For Aecending
+// let a =  numbers.sort((a,b)=>{
+//     return a - b ;
+// })
+// console.log(a);
+
+// //For Descending
+// let b =  numbers.sort((a,b)=>{
+//     return b - a ;
+// })
+// console.log(b);
+
+// // 13. Write some code to place this list in alphabetical order
+// var p = ["a", "z", "e", "y","amudhavan","ayan", "elve", "ban", "You"];
+// p.sort();
+// console.log(p);
+
+
+// // 14. What is the length of these arrays
+// var arr1 = [, , ,];  //3
+
+// var arr2 = new Array(3);  //3
+
+// var arr3 = [1, 2, 3, 4, 5];  //5
+
+// var array = [
+//   [1, 2, 3],
+//   [4, 5, 6],
+// ];   //2
+
+// 15. What are the results of these splice and slice methods
+var a = ["zero", "one", "two", "three", "four","five"];
+var names = ["jason", "john", "peter", "karen","you", "me"];
+
+var sliced = a.slice(3, 6);
+var spliced = names.splice(1, 1);
+
+console.log(sliced);
+console.log(spliced);
+
+var a = ["zero", "one", "two", "three"];
+var names = ["jason", "john", "peter", "karen"];
+
+var sliced = a.slice(1, 3);
+var spliced = names.splice(1, 3);
+
+// The slice() method returns a shallow copy of a portion of an array into a new array object selected from begin to end (end not included). The original array will not be modified.
+
+console.log(sliced); // creates a new array ['one', 'two']
+console.log(a); // main array remains untouched
+
+// The splice() method changes the content of an array by removing existing elements and/or adding new elements.
+
+console.log(spliced); // it returns  [ 'john', 'peter', 'karen' ]
+console.log(names); // however the array only contains jason now
+
+// 16 . What are the console logs of these shift and unshift methods
+
+var a = [];
+
+// We take an empty array and
+
+a.unshift(1);
+a.unshift(22);
+var b = console.log(a);
+a.shift();
+var c = console.log(a);
+a.unshift(3, [4, 5]);
+var d = console.log(a);
+a.shift();
+var e = console.log(a);
+a.shift();
+var f = console.log(a);
+a.shift();
+var g = console.log(a);
+
+// Results
+var a = [1]; // we a.unshift(1) so added 1 to front
+
+var b = [22, 1]; // we a.unshift(22) so added 22 to front
+
+var c = [1]; // we a.shift() so removed the first element
+
+var d = [3, [4, 5], 1]; // we a.unshift(3,[4,5]) so added these to front
+var e = [[4, 5], 1]; // we a.shift() so remove first element
+
+var f = [1]; // we a.shift() so remove first element
+
+var g = []; // we a.shift() so remove first element leaving it empty
+
+
+// 17. Using reduce add all these numbers
+var numbers = [1, 2, 3, 4, 5, 6];
+
+var numbers = [1, 2, 3, 4, 5, 6];
+
+var total = numbers.reduce((a, b) => {
+  return a + b;
+});
+
+console.log(total); // Total returned is : 21
+
+
+// 18. Flatten this array to one single array using reduce
+
+var array = [
+  [0, 1],
+  [2, 3],
+  [4, 5],
+];
+
+Var array =  [[0, 1], [2, 3], [4, 5]];
+
+var flattened = array.reduce(function(a, b) {
+    return a.concat(b);
+},[ ]);
+
+console.log(flattened); // [ 0, 1, 2, 3, 4, 5 ]
+
+
+//19. Filter this array to return just the dogs
+
+var animals = [
+  { name: "Jason", species: "rabbit" },
+  { name: "Jessica", species: "dog" },
+  { name: "Jacky", species: "owl" },
+  { name: "Luke", species: "fish" },
+  { name: "Junior", species: "rat" },
+  { name: "Thomas", species: "cat" },
+];
+
+var animals = [
+  { name: "Jason", species: "rabbit" },
+  { name: "Jessica", species: "dog" },
+  { name: "Jacky", species: "owl" },
+  { name: "Luke", species: "fish" },
+  { name: "Junior", species: "rat" },
+  { name: "Thomas", species: "cat" },
+];
+Answer;
+
+/******************************************
+  filter method with callback function
+******************************************/
+
+var dogs = animals.filter(function (animals) {
+  return animals.species === "dog";
+});
+
+console.log(dogs);
+
+// Returns
+
+[{ name: "Jessica", species: "dog" }];
+
+// The filter() method creates a new array with all elements that pass the test implemented by the provided function.
+
+// 20. Using array in question 19 use map function to return all the species
+
+var types = animals.map(function (animals) {
+  return animals.species;
+});
+console.log(types); // [ 'rabbit', 'dog', 'owl', 'fish', 'rat', 'cat' ]
+
+</script>
+
