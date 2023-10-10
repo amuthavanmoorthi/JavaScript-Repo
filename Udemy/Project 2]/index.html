@@ -5,30 +5,32 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Bootstrap demo</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
   </head>
   <body class="bg-dark">
     <section class="d-flex justify-content-center align-items-center min-vh-100">
     <div>
-        <button class="text-white bg-success rounded border-0 px-5 py-3 m-5">SUCCESS</button>
-        <button class="text-white bg-warning rounded border-0 px-5 py-3 m-5">WARNING</button>
-        <button class="text-white bg-danger rounded border-0 px-5 py-3 m-5">DANGER</button>
+        <button class="text-white bg-success rounded border-0 px-5 py-3 m-5 show-model">SUCCESS</button>
+        <button class="text-white bg-warning rounded border-0 px-5 py-3 m-5 show-model">WARNING</button>
+        <button class="text-white bg-danger rounded border-0 px-5 py-3 m-5 show-model">DANGER</button>
     </div>
     </section>
 <section>
-    <div class="d-none">
-        <button>&times;</button>
-        <h1>Im a Success window</h1>
-        <p>
+    <div class="hidden bg-success p-5 m-5 model">
+        <button class="close-button">&times;</button>
+        <h1 class="text-center text-white">window</h1>
+        <p class="text-white">
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum excepturi deleniti necessitatibus sunt, nam dicta voluptate inventore mollitia quasi, maxime incidunt pariatur dolor perferendis doloremque, alias quaerat odio. Optio, quis.
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque eius dignissimos ea expedita laudantium qui accusantium, autem placeat hic dolores consequuntur, incidunt dolorum, reiciendis cum? Voluptatibus rem doloribus repellat debitis.
             Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veritatis tempora explicabo necessitatibus, fugiat voluptates beatae omnis sunt! Consequatur esse itaque molestias, aliquid fuga dolore nihil, cupiditate corporis ipsam non quas.
         </p>
     </div>
+    <div class="overlay"></div>
 </section>
 
 
 
-
+<script src="./script.js"></script>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
   </body>

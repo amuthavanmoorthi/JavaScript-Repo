@@ -1,0 +1,12 @@
+.hidden{
+    display: none;
+    position: absolute;
+    top: 250%;
+    left: 25%;
+}
+.close-button{
+    /* display: flex;
+    justify-content: end; */
+    text-align: end;
+}
+
