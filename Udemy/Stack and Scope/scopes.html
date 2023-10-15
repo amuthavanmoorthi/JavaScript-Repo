@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Scopes</title>
+</head>
+<body>
+    <h1>DIFFERENT TYPES SCOPES</h1>
+    <ul>
+        <li>
+            Global Scope = It means only outside of the function or block
+        </li>
+        <li>
+            Function Score = it will work in only inside of the function NOT outsdie
+        </li>
+        <li>
+            Block Scope [ES6] = only in for let, Const in the function.<br> It will work only in 'use strcit mode'
+        </li>
+    </ul>
+
+    <script>
+        //Global Scope
+        const myName = 'amudhavan'
+        //first() is scope.
+        function first(){
+            const age = 20;
+            //This if is block-scope.
+            if(age >= 30){
+                //let and const are block-scoped
+                const decade = 3;
+                var millenial = true;
+                //Var is a function-scoped
+            }
+            //second() is scope
+            function second(){
+                const job = 'Tutor';
+                //Here the myName and age variable are not in this scope.
+             let a = console.log(`${myName} is a ${age} - old ${job}`)
+            }
+            second();
+        }
+        first();
+    </script>
+</body>
+</html>
