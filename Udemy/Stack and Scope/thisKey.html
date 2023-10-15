@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>This Keyword!</h1>
+    <script>
+        'use strict'
+        // const details ={
+        //     name : "amudhavan",
+        //     age : 20,
+        //     Birth_Year : 2002,
+        //     calAge : function(){
+        //         return 2023 - this.Birth_Year
+        //     }
+        // }
+        // console.log(details.calAge());
+
+        // console.log(this);
+        // function calAge(Birth_Year){
+        //     console.log(2023 - Birth_Year);  
+        //     console.log(this);
+        // }
+        // calAge(2002);
+        const kamesh ={
+            year : 1991,
+            calAge : function(){
+                // console.log(this);
+                console.log(2023 - this.year);
+            }
+        }
+        // kamesh.calAge();
+
+        const Niroshan = {
+            year : 2011,
+        };
+        //Inserting the new object key and value in the niroshan object.
+        Niroshan.calAge = kamesh.calAge;
+        console.log(Niroshan);
+        Niroshan.calAge();
+    </script>
+</body>
+</html>
