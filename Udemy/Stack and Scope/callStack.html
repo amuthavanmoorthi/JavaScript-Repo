@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h1>Hello to the call stack</h1>
+    <script>
+      const name = "amudhavan";
+
+      let first = () => {
+        const number = 1;
+        const b = second(1, 2);
+        const c = a + b;
+        return c;
+      };
+
+      function second(x, y) {
+        let numberOne = 2;
+        return numberOne;
+      }
+      const you = first();
+      console.log(you);
+    </script>
+  </body>
+</html>
