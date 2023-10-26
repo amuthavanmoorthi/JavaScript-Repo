@@ -56,12 +56,12 @@ const restaurent = {
 // console.log(Object.values(openingHours));
 
 // //Property Entries 
-// const Entry = Object.entries(openingHours)
+const Entry = Object.entries(openingHours)
 
-// //[Key , Value]
-// for (const [propy,{open, close}] of Entry){
-//     console.log(`On ${propy} We open at${open} and close at ${close}`);
-// }
+//[Key , Value]
+for (const [propy,{open, close}] of Entry){
+    console.log(`On ${propy} We open at${open} and close at ${close}`);
+}
 
 //*************************************** OPTIONAL CHAINING (_.) *************************** */
 
